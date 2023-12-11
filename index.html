@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Portfolio</title>
+    
+    <style>
+	body {
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    color: #61dafb;
+}
+
+.terminal {
+    border: 2px solid #61dafb;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 80%;
+    max-width: 800px;
+    background-color: #1e1e1e;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+        .green{
+            color: rgb(9, 232, 9);
+        }
+        
+        .underline{
+            text-decoration: underline;
+        }
+
+.header {
+    background-color: #282c34;
+    padding: 10px;
+    font-size: 18px;
+    color: #61dafb;
+}
+
+.content {
+    padding: 10px;
+}
+
+.input-line {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #1e1e1e;
+}
+
+.prompt {
+    color: red;
+    margin-right: 5px;
+}
+
+#command-input {
+    flex: 1;
+    white-space: pre; /* Preserve whitespaces, e.g., for multiline commands */
+    outline: none; /* Remove default focus border */
+    display: block; /* Make it behave more like a block element */
+}
+
+</style>
+</head>
+<body>
+    <div class="terminal">
+        <div class="header">Your Portfolio</div>
+        <div class="content">
+            <h2>Welcome to my Arena, Researcher...!</h2>
+            <p>
+
+Here, I am <span style="color: red; font-size: 28px;">0x4b564b</span>, <span class="underline">stripped</span>—no, not a stripper.</p>
+            <p><span class="green">[+]</span> I proudly declare myself <span>obfuscated</span>. It depends on your skills to reverse engineer me and discover my <span>vulnerabilities</span>. </p>
+            
+            <br>
+            
+            <p><span class="green">[+]</span> Think you can dissect me under a debugger? Think again. </p>
+            <br>
+            
+            
+            <p><span class="green">[+]</span> I've incorporated <span class="underline">anti-debugging</span> mechanisms to thwart those attempting to uncover my Vulnerabilities.</p>
+            
+            <br>
+            <p>
+            </p>
+                <br>
+            
+            <p><span class="green">[+]</span> Finally, I don't even trust my <span class="underline">debugger</span>...!</p>
+            
+        </div>
+        <div class="input-line">
+            <span class="prompt">pwngdb> </span>
+            <span id="command-input" contenteditable="true" spellcheck="false" autofocus></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
