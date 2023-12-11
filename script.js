@@ -18,6 +18,9 @@ function handleCommand(command) {
         case 'help':
             newContent.innerText = 'Available commands: help, about, projects';
             break;
+        case 'couurses':
+            newContent.innerText = '1. SecurityTube Linux Assembly Expert.';
+            
         case 'about':
             newContent.innerText = 'This is your portfolio. Customize it to showcase your skills and projects.';
             break;
