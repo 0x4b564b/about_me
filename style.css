@@ -1,29 +1,40 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #111;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
     color: #fff;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 header {
-    background-color: #282c34;
-    padding: 20px;
+    background: linear-gradient(135deg, #232526, #414345);
+    padding: 50px 20px;
     text-align: center;
+    position: relative;
+}
+
+header .header-content {
+    position: relative;
+    z-index: 2;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
 }
 
 header p {
-    margin: 0;
-    font-size: 1.2em;
+    margin: 10px 0 0;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
 }
 
 main {
     padding: 20px;
+    position: relative;
+    z-index: 1;
 }
 
 section {
@@ -41,14 +52,44 @@ section ul {
 }
 
 section ul li {
-    background: #20232a;
+    background: rgba(0, 0, 0, 0.3);
     margin: 5px 0;
     padding: 10px;
     border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section ul li::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #61dafb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
 }
 
 footer {
-    background-color: #282c34;
+    background: linear-gradient(135deg, #232526, #414345);
     padding: 10px;
     text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+    opacity: 0.1;
+    z-index: 0;
 }
